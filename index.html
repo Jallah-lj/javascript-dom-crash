@@ -2,31 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=q, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Material Icons -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    >
 </head>
 <body>
-    <h1 class="title" id="title">Hello</h1>
 
+<div class="container">
 
-    <button class="addBtn">Add List</button>
- 
+    <h1>My To-Do List</h1>
 
-    <ul class="name-list">
-        <li>john</li>
-        <li>doe</li>
-        <li>abnation</li>
-        <li>ali</li>
-        <li>adam</li>
-        <li>harry</li>
+    <p>Organize your daily tasks and remove when done.</p>
 
-    </ul>
+    <form id="list-form">
 
-    <form>
-        <input type="text" name="" class="list-input">
-        <input type="submit" value="Submit">
+        <input
+            type="text"
+            class="list-input"
+            placeholder="Enter a task..."
+            autocomplete="off"
+        >
+
+        <button type="submit" class="submit-btn">
+
+            <span class="material-symbols-outlined">
+                list_alt_add
+            </span>
+
+            Add
+
+        </button>
+
     </form>
-    <script src="scripts.js"></script>
+
+    <ul class="name-list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
